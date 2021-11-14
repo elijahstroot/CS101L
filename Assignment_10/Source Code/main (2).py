@@ -53,14 +53,14 @@ def highest_values(z_dict):
 
 def more_occurence(z_dict):
   x = []
-  for k,v in z_dict:
+  for k,v in z_dict():
     if (k == 1) and (len(v) > 3):
       x.append(v)
   return len(x)
 
 def unique_words(z_dict):
   x = []
-  for k,v in z_dict:
+  for k,v in z_dict():
     if len(v) > 3:
       x.append(v)
   return len(x)
